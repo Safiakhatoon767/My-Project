@@ -1,58 +1,43 @@
-* {
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background: linear-gradient(to right, #1f4037, #99f2c8);
     font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-body {
-    background: linear-gradient(135deg, #1f1c2c, #928dab);
-    height: 100vh;
+.slider-container {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 20px;
 }
 
-.safia-slider-container {
-    text-align: center;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.05);
-    border-radius: 20px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(15px);
-}
-
-.safia-slider-frame {
-    width: 800px;
-    height: 450px;
-    border: 6px solid #ffffff;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
-    margin-bottom: 20px;
-}
-
-#main-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+#slider {
+    width: 400px;
+    height: 250px;
     border-radius: 10px;
-    transition: 0.5s ease-in-out;
+    object-fit: cover;
+    transition: all 0.5s ease-in-out;
 }
 
-.safia-slider-controls button {
-    padding: 12px 25px;
-    margin: 0 15px;
-    font-size: 18px;
-    background: linear-gradient(to right, #ff416c, #ff4b2b);
+.btn {
+    background-color: #00c9a7;
+    color: white;
     border: none;
-    border-radius: 30px;
-    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: transform 0.3s, background 0.3s;
+    transition: background 0.3s ease;
 }
 
-.safia-slider-controls button:hover {
-    transform: scale(1.1);
-    background: linear-gradient(to right, #ff4b2b, #ff416c);
+.btn:hover {
+    background-color: #007f6e;
 }
